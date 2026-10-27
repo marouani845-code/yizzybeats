@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0f">
+  <meta name="description" content="Discover original beats and music productions by Yizzy Beats.">
+  <title>Yizzy Beats — Find Your Next Sound</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#">YIZZY<span>.</span>BEATS</a>
+    <nav>
+      <a href="#beats">Beats</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#beats">SHOP BEATS ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">INDEPENDENT MUSIC PRODUCER</p>
+        <h1>FIND YOUR<br>NEXT <span>SOUND.</span></h1>
+        <p class="intro">
+          Original productions. Unforgettable melodies.
+          Find the sound for your next track.
+        </p>
+        <a class="button" href="#beats">EXPLORE THE BEATS ↓</a>
+        <p class="small">5 PRODUCTIONS · DIGITAL DELIVERY</p>
+      </div>
+      <div class="hero-art">
+        <div class="orb"></div>
+        <div class="art-label">YB / 001<br>CREATED TO INSPIRE</div>
+        <div class="equalizer" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="beats" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2>SELECT YOUR BEAT<span>.</span></h2>
+        </div>
+        <p>Listen to a preview and choose your licence.</p>
+      </div>
+
+      <div id="beat-grid" class="beat-grid"></div>
+    </section>
+
+    <section id="about" class="about">
+      <p class="eyebrow">THE SOUND OF YIZZY</p>
+      <h2>YOUR VISION.<br><span>MY PRODUCTION.</span></h2>
+      <p>
+        Five productions to get you started.
+        Listen, choose your licence and create something original.
+      </p>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="eyebrow">LET'S WORK TOGETHER</p>
+      <h2>MAKE SOMETHING <span>REAL.</span></h2>
+      <p>For custom beats, collaborations or business enquiries.</p>
+      <div class="contact-links">
+        <a href="mailto:Yizzybeats1@gmail.com">✉ Email Yizzy</a>
+        <a href="https://www.instagram.com/yizzy.beats/"
+           target="_blank" rel="noopener noreferrer">◎ Instagram</a>
+        <a href="tel:+33612947724">☎ Call</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#">YIZZY<span>.</span>BEATS</a>
+    <p>© <span id="year"></span> Yizzy Beats. All rights reserved.</p>
+    <p>Payments are processed securely by the selected provider.</p>
+  </footer>
+
+  <dialog id="checkout">
+    <button class="close" id="close-checkout" aria-label="Close">×</button>
+    <p class="eyebrow">SECURE CHECKOUT</p>
+    <h2 id="checkout-title">Your beat</h2>
+    <p id="checkout-price"></p>
+    <label for="licence">Choose your licence</label>
+    <select id="licence">
+      <option value="basic">Basic MP3 — €29.99</option>
+      <option value="premium">Premium WAV — €59.99</option>
+      <option value="unlimited">Unlimited — €99.99</option>
+    </select>
+    <div id="paypal-button-container"></div>
+    <p id="payment-message" role="status">
+      PayPal checkout loads when the store is configured.
+    </p>
+    <p class="small">Wero checkout will be enabled after merchant-provider setup.</p>
+  </dialog>
+
+  <script src="/app.js"></script>
+</body>
+</html>
